@@ -34,12 +34,14 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
-
 gem 'spree_auth', '1.1.0'
 gem 'spree_cmd', '1.1.0'
 gem 'spree_core', '1.1.0'
 gem 'spree_promo', '1.1.0'
 gem 'spree_sample', '1.1.0'
+
+
+# SpreeFlexiVariants
+gem 'rmagick'
+gem 'carrierwave'
+gem 'spree_flexi_variants', :path => "lib/spree_flexi_variants"
