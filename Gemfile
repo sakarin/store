@@ -37,4 +37,9 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'spree', '1.1.0'
+
+gem 'spree_auth', '1.1.0'
+gem 'spree_cmd', '1.1.0'
+gem 'spree_core', '1.1.0'
+gem 'spree_promo', '1.1.0'
+gem 'spree_sample', '1.1.0'
