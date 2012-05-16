@@ -20,6 +20,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -29,7 +33,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -40,8 +44,17 @@ gem 'spree_core', '1.1.0'
 gem 'spree_promo', '1.1.0'
 gem 'spree_sample', '1.1.0'
 
-
 # SpreeFlexiVariants
 gem 'rmagick'
 gem 'carrierwave'
 gem 'spree_flexi_variants', :path => "lib/spree_flexi_variants"
+
+gem "rspec-rails", :group => [:test, :development]
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "guard-rspec"
+  gem 'launchy'
+  gem "database_cleaner"
+  gem "email_spec"
+end
